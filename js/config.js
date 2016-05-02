@@ -1,0 +1,247 @@
+var Config = Config || {};
+
+Config.whitelist = [
+	// general sites
+	'wikipedia\\.org',
+	'wikimedia\\.org',
+	'wiktionary\\.org',
+	'github\\.com',
+	'reddit\\.com',
+	'gamefaqs\\.com',
+	'facebook\\.com',
+	'fbcdn\\.net',
+	'twitter\\.com',
+	'deviantart\\.com',
+	'youtube\\.com',
+	'youtu\\.be',
+	'zombo\\.com',
+	'strawpoll\\.me',
+	'twitch\\.tv',
+	'take-a-screenshot\\.org',
+	'myanimelist\\.net',
+	'4chan\\.org',
+	'tumblr\\.com',
+	'git\\.io',
+	'mibbit\\.com',
+	'codecademy\\.com',
+	'xkcd\\.com',
+	'stackoverflow\\.com',
+	'stackexchange\\.com',
+	'malwarebytes\\.org',
+
+	// pokemon sites
+	'pokemonshowdown\\.com',
+	'psim\\.us',
+	'smogon\\.com',
+	'upokecenter\\.com',
+	'veekun\\.com',
+	'bulbagarden\\.net',
+	'serebii\\.net',
+	'nuggetbridge\\.com',
+	'pokecommunity\\.com',
+	'pokemon-online\\.eu',
+	'pokemonlab\\.com',
+	'shoddybattle\\.com',
+	'pokemonxy\\.com',
+	'pokemon\\.com',
+	'pokecheck\\.org',
+	'pokemondb\\.net',
+	'pokemoncentral\\.it',
+	'poketrade\\.us',
+	'neverused\\.net',
+	'pokestrat\\.com',
+	'spo\\.ink',
+
+	// personal sites
+	'breakdown\\.forumotion\\.com',
+	'pokemonmillennium\\.net',
+	'thebattletower\\.no-ip\\.org',
+	'meltsner\\.com',
+	'guangcongluo\\.com',
+	'cathyjf\\.com',
+	'xiaotai\\.org',
+	// personal hosting sites
+	'forumieren\\.com',
+	'soforums\\.com',
+	'proboards\\.com',
+	'weebly\\.com',
+	'freeforums\\.org',
+	'forumactif\\.com',
+
+	// rich text
+	'docs\\.google\\.com',
+
+	// text
+	'pastebin\\.com',
+	'hastebin\\.com',
+	'trello\\.com',
+	'challonge\\.com',
+	'piratepad\\.net',
+
+	// music
+	'plug\\.dj',
+
+	// images
+	'prntscr\\.com',
+	'puu\\.sh',
+	'd\\.pr',
+	'snag\\.gy',
+	'gyazo\\.com',
+	'imgur\\.com',
+	'gfycat\\.com',
+	'4cdn\\.org'
+];
+
+Config.roomsFirstOpenScript = function () {
+	/* eslint-disable */
+	if ($(window).width() >= 800 && location.protocol !== 'https:') {
+		$('.roomlisttop').first().after('<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-6535472412829264" data-ad-slot="9267650135"></ins>');
+		$('.roomlist').first().after('<ins class="adsbygoogle" style="display:inline-block;width:336px;height:280px" data-ad-client="ca-pub-6535472412829264" data-ad-slot="3029313334"></ins>');
+		try {
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		} catch (e) {}
+	} else {
+		$('.roomlisttop').first().after('<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6535472412829264" data-ad-slot="7790916938" data-ad-format="auto"></ins>');
+		$('.roomlist').first().after('<ins class="adsbygoogle" style="display:block" data-ad-client="ca-pub-6535472412829264" data-ad-slot="1749652533" data-ad-format="auto"></ins>');
+		try {
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			(adsbygoogle = window.adsbygoogle || []).push({});
+		} catch (e) {}
+	}
+	/* eslint-enable */
+};
+
+Config.customcolors = {
+	'theimmortal': 'taco',
+	'bmelts': 'testmelts',
+	'zarel': 'aeo',
+	'zarell': 'aeo',
+	'greatsage': 'test454',
+	// 'snowflakes': 'snowflake',
+	'jumpluff': 'zacchaeus',
+	'zacchaeus': 'jumpluff',
+	'kraw': 'kraw1',
+	'growlithe': 'steamroll',
+	'snowflakes': 'endedinariot',
+	'doomvendingmachine': 'theimmortal',
+	'mikel': 'mikkel',
+	'arcticblast': 'rsem',
+	'mjb': 'thefourthchaser',
+	'thefourthchaser': 'mjb',
+	'tfc': 'mjb',
+	'mikedecishere': 'mikedec3boobs',
+	'heartsonfire': 'haatsuonfaiyaa',
+	'royalty': 'wonder9',
+	// 'osiris': 'yamraiha',
+	'limi': 'azure2',
+	'haunter': 'cathy',
+	'ginganinja': 'piratesandninjas',
+	'aurora': 'c6n6fek',
+	'jdarden': 'danielcross',
+	'solace': 'amorlan',
+	'dcae': 'galvatron',
+	'queenofrandoms': 'hahaqor',
+	'jelandee': 'thejelandee',
+	'diatom': 'dledledlewhooop',
+	// 'waterbomb': 'wb0',
+	'texascloverleaf': 'aggronsmash',
+	'treecko': 'treecko56',
+	'treecko37': 'treecko56',
+	'violatic': 'violatic92',
+	'exeggutor': 'ironmanatee',
+	'ironmanatee': 'exeggutor',
+	// 'shamethat': 'aaa10',
+	'skylight': 'aerithass',
+	// 'prem': 'premisapieceofshit',
+	'goddessbriyella': 'jolteonxvii', // third color change
+	'nekonay': 'catbot20',
+	'coronis': 'kowonis',
+	'vaxter': 'anvaxter',
+	'mattl': 'mattl34',
+	'shaymin': 'test33',
+	// 'orphic': 'dmt6922',
+	'kayo': 'endedinariot',
+	'tgmd': 'greatmightydoom',
+	'vacate': 'vaat111111111',
+	'bean': 'dragonbean',
+	'yunan': 'osiris13',
+	'politoed': 'brosb4hoohs',
+	'scotteh': 'nsyncluvr67',
+	'bumbadadabum': 'puckerluvr69',
+	'yuihirasawa': 'weeabookiller',
+	'monohearted': 'nighthearted',
+	'prem': 'erinanakiri', // second color change
+	'clefairy': 'fuckes',
+	'morfent': 'aaaa',
+	'crobat': 'supergaycrobat4',
+	'beowulf': '298789z7z',
+	'flippy': 'flippo',
+	'raoulsteve247': 'raoulbuildingpc',
+	'thedeceiver': 'colourtest011',
+	'darnell': 'ggggggg',
+	'shamethat': 'qpwkfklkjpskllj', // second color change
+	'aipom': 'wdsddsdadas',
+	'alter': 'spakling',
+	'biggie': 'aoedoedad',
+	'osiris': 'osiris12', // second color change
+	'azumarill': 'azumarill69',
+	'redew': 'redeww',
+	'sapphire': 'masquerains',
+	'calyxium': 'calyxium142',
+	'kiracookie': 'kracookie',
+	'blitzamirin': 'hikaruhitachii',
+	'skitty': 'shckieei',
+	'sweep': 'jgjjfgdfg', // second color change
+	'panpawn': 'crowt',
+	'val': 'pleasegivemecolorr',
+	'valentine': 'pleasegivemecolorr',
+	'briayan': 'haxorusxi',
+	'xzern': 'mintycolors',
+	'shgeldz': 'cactusl00ver',
+	'abra': 'lunchawaits',
+	'maomiraen': 'aaaaaa',
+	'trickster': 'sunako',
+	'articuno': 'bluekitteh177',
+	// 'antemortem': 'abc11092345678',
+	'scene': 'aspire',
+	'barton': 'hollywood15',
+	// 'psych': 'epicwome',
+	'zodiax': 'coldeann',
+	'ninetynine': 'blackkkk',
+	'kasumi': 'scooter4000',
+	'xylen': 'bloodyrevengebr',
+	'aelita': 'y34co3',
+	'fx': 'cm48ubpq',
+	'horyzhnz': 'superguy69',
+	'quarkz': 'quarkz345',
+	'fleurdyleurse': 'calvaryfishes',
+	'trinitrotoluene': '4qpr7pc5mb',
+	'rekeri': 'qgadlu6g',
+	'austin': 'jkjkjkjkjkgdl',
+	'jinofthegale': 'cainvelasquez',
+	'waterbomb': 'naninan',
+	'starbloom': 'taigaaisaka',
+	'macle': 'flogged',
+	'ashiemore': 'poncp',
+	'charles': 'charlescarmichael',
+	'sigilyph': 'ek6',
+	'spy': 'spydreigon',
+	'kinguu': 'dodmen',
+	'dodmen': 'kinguu',
+	'halite': 'cjilkposqknolssss',
+	'magnemite': 'dsfsdffs',
+	'ace': 'sigilyph143',
+	'leftiez': 'xxxxnbbhiojll',
+	'grim': 'grimoiregod',
+	'strength': '0v0tqpnu',
+	'advantage': 'nsyncluvr67',
+	'quote': 'quotecs',
+	'snow': 'q21yzqgh',
+	'omegaxis': 'omegaxis14',
+	'paradise': 'rnxvzwpwtz',
+	'sailorcosmos': 'goldmedalpas',
+	'dontlose': 'dhcli22h',
+	'tatsumaki': 'developmentary',
+	'cathy': '' //{color: '#ff5cb6'}
+};
